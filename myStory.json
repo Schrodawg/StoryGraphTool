@@ -1,58 +1,80 @@
 {
-    "Title": "Campus Life on the West Side",
+    "Title": "Housing Woes",
     "Credits": "Created by Craig Schroeder (cjschroe@ucsc.edu).",
-    "InitialLocation": "Kresge",
+    "InitialLocation": "Home",
     "Locations": {
-        "Kresge": {
-            "Body": "This is Kresge College, lots of nice trees.",
+        "Home": {
+            "Body": "It's the start of the housing search season. You've been through this before, but your last adveture was ended prematurely thanks to a kind savior. Now you must begin again, though their will be no miracle this time...",
             "Choices": [
                 {
-                    "Text": "South",
-                    "Target": "Porter"
-                }
-            ]
-        },
-        "Porter": {
-            "Body": "This is Porter College, the trees are nice here too.",
-            "Choices": [
-                {
-                    "Text": "North",
-                    "Target": "Kresge"
+                    "Text": "Start Researching",
+                    "Target": "Roommates"
                 },
                 {
-                    "Text": "South",
-                    "Target": "Rachel Carson"
+                    "Text": "Procrastinate",
+                    "Target": "BadEnd"
                 }
             ]
         },
-        "Rachel Carson": {
-            "Body": "Rachel Carson College, more sun and fewer trees.",
+        "Roommates": {
+            "Body": "You quickly learn that you'll need to room with others, your budget simply is too strict to otherwise.",
             "Choices": [
                 {
-                    "Text": "North",
-                    "Target": "Porter"
+                    "Text": "Room with so-so friends",
+                    "Target": "Grudge"
                 },
                 {
-                    "Text": "South",
-                    "Target": "Oakes"
+                    "Text": "Investigate good roommates",
+                    "Target": "Start"
                 }
             ]
         },
-        "Oakes": {
-            "Body": "Oakes College, even the buildings have tree bark on them.",
+        "Start": {
+            "Body": "You find roommates that have jobs, savings, and even parents willing to be guarantors! You all work together to gather up as much necessary documentation as you can. You begin to search the web for places. So many to choose from! At least that's what it looks like. Realistically speaking your buget only allows you to choose some of these.",
             "Choices": [
                 {
-                    "Text": "North",
-                    "Target": "Rachel Carson"
+                    "Text": "Message them all",
+                    "Target": "All"
                 },
                 {
-                    "Text": "South",
-                    "Target": "Beyond"
+                    "Text": "Message the one you like the most",
+                    "Target": "Picky"
                 }
             ]
         },
-        "Beyond": {
-            "Body": "Grass, don't forget to check for ticks!"
+        "All": {
+            "Body": "Though it takes some time, you evnetually get a call back from one place. It's one of the ones that you actually liked! You go over and look the place up and down. It's servicable, but after the stress you've been under trying to find it you could see anything as a paradise. The landlord seems receptive to you and your group and says they'll keep in touch",
+            "Choices": [
+                {
+                    "Text": "CELEBRATE!",
+                    "Target": "so close"
+                },
+                {
+                    "Text": "Watch your phone like a hawk",
+                    "Target": "Congrats"
+                }
+            ]
+        },
+        "Congrats": {
+            "Body": "Sure enough, they call you asking for more documents. You were prepared though. You send over everything they ask for without issue. The landlord agrees to rent to you. You've done it!"
+        },
+        "so close": {
+            "Body": "It went so well! You break out the good stuff and get hammered. So hammered in fact that when the landlord calls you the next morning asking for some more paperwork, you don't even hear your phone go off. By the time you sober up, you can't even find your phone anyway. Now you got first months rent, AND a new mobile. Though the former is gonna take some time as the landlord moved on from you and the group. Maybe next time champ."
+        },
+        "Picky": {
+            "Body": "In this economy?! You never hear back from the place, they already chose a tenant before you even looked at the listing and just never took down the ad. Your future roommates begin to doubt your efforts and secretly gather. Eventually they find another and you're all alone once again.",
+            "Choices": [
+                {
+                    "Text": "Time to find new roommates...",
+                    "Target": "Roommates"
+                }
+            ]
+        },
+        "BadEnd": {
+            "Body": "You've doomed yourself to homelessness. The housing office never made an offer. You sleep on the street with no one to support you. Nice work."
+        },
+        "Grudge": {
+            "Body": "You've chosen. . . poorly. Your friends you thought we're by your side through and through ended up finding their own accommodations without you =,( . They send you pics occasionally of their parties and casually invite you to some, but living out of your car doesn't leave you with the best appearance. Or confidence."
         }
     }
 }
